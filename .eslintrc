@@ -1,0 +1,9 @@
+{
+	"root": true,
+
+	"globals": {
+		"System": false
+	},
+
+	"extends": "@ljharb"
+}

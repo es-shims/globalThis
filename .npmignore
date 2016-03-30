@@ -1,0 +1,6 @@
+npm-debug.log
+browserShim.js
+.npmignore
+.travis.yml
+.jscs.json
+
