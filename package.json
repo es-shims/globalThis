@@ -1,6 +1,6 @@
 {
 	"name": "system.global",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"author": "Jordan Harband",
 	"description": "ECMAScript spec-compliant polyfill/shim for `System.global`",
 	"license": "MIT",
