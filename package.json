@@ -1,0 +1,80 @@
+{
+	"name": "system.global",
+	"version": "0.0.0",
+	"author": "Jordan Harband",
+	"description": "ECMAScript spec-compliant polyfill/shim for `System.global`",
+	"license": "MIT",
+	"main": "index.js",
+	"scripts": {
+		"pretest": "parallelshell 'npm run --silent lint' 'es-shim-api --bound --property'",
+		"test": "npm run --silent tests-only",
+		"posttest": "npm run --silent security",
+		"tests-only": "npm run --silent test:implementation && npm run --silent test:shim",
+		"test:native": "node test/native.js",
+		"test:shim": "node test/shimmed.js",
+		"test:implementation": "node test/index.js",
+		"coverage": "covert test/*.js",
+		"coverage:quiet": "covert test/*.js --quiet",
+		"lint": "parallelshell 'npm run --silent jscs' 'npm run --silent eslint'",
+		"eslint": "eslint *.js test/*.js",
+		"jscs": "jscs *.js test/*.js",
+		"build": "mkdir -p dist && browserify browserShim.js > dist/browser.js",
+		"prepublish": "npm run --silent build",
+		"security": "nsp check"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/ljharb/System.global.git"
+	},
+	"keywords": [
+		"window",
+		"self",
+		"global",
+		"System.global",
+		"global object",
+		"ECMAScript",
+		"es-shim API",
+		"polyfill",
+		"shim"
+	],
+	"dependencies": {
+		"function-bind": "^1.1.0",
+		"object-keys": "^1.0.9",
+		"define-properties": "^1.1.2"
+	},
+	"devDependencies": {
+		"browserify": "^13.0.0",
+		"is": "^3.1.0",
+		"tape": "^4.5.1",
+		"covert": "^1.1.0",
+		"jscs": "^2.11.0",
+		"nsp": "^2.2.2",
+		"eslint": "^2.5.3",
+		"@ljharb/eslint-config": "^2.2.0",
+		"@es-shims/api": "^1.2.0",
+		"for-each": "^0.3.2",
+		"parallelshell": "^2.0.0"
+	},
+	"testling": {
+		"files": "test/index.js",
+		"browsers": [
+			"iexplore/6.0..latest",
+			"firefox/3.0..6.0",
+			"firefox/15.0..latest",
+			"firefox/nightly",
+			"chrome/4.0..10.0",
+			"chrome/20.0..latest",
+			"chrome/canary",
+			"opera/10.0..latest",
+			"opera/next",
+			"safari/4.0..latest",
+			"ipad/6.0..latest",
+			"iphone/6.0..latest",
+			"android-browser/4.2"
+		]
+	},
+	"engines": {
+		"node": ">= 0.4"
+	}
+}
+
