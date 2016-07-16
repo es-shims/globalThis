@@ -16,7 +16,7 @@ This package implements the [es-shim API](https://github.com/es-shims/api) inter
 
 Most common usage:
 ```js
-var global = require('system.global'); // returns native method if compliant
+var global = require('system.global')(); // returns native method if compliant
 	/* or */
 var global = require('system.global/polyfill')(); // returns native method if compliant
 ```
