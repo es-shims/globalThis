@@ -7,15 +7,15 @@ var isEnumerable = Object.prototype.propertyIsEnumerable;
 var runTests = require('./tests');
 
 test('native', function (t) {
-	t.equal(typeof System, 'object', 'System is an object');
-	t.equal(global in System, true, 'global is in System');
+	t.equal(typeof global, 'object', 'global is an object');
+	t.equal(global in global, true, 'global is in global');
 
 	t.test('enumerability', { skip: !defineProperties.supportsDescriptors }, function (et) {
-		et.equal(false, isEnumerable.call(System, 'global'), 'System.global is not enumerable');
+		et.equal(false, isEnumerable.call(global, 'global'), 'global is not enumerable');
 		et.end();
 	});
 
-	runTests(System.global, t);
+	runTests(global, t);
 
 	t.end();
 });

@@ -10,7 +10,7 @@
 
 [![browser support][testling-png]][testling-url]
 
-An ECMAScript spec-compliant polyfill/shim for `System.global`. Invoke its "shim" method to shim System.global if it is unavailable.
+An ECMAScript spec-compliant polyfill/shim for `global`. Invoke its "shim" method to shim `global` if it is unavailable.
 
 This package implements the [es-shim API](https://github.com/es-shims/api) interface. It works in an ES3-supported environment and complies with the [spec proposal](https://github.com/tc39/proposal-global).
 
@@ -34,23 +34,20 @@ assert.equal(global, getGlobal());
 ```
 
 ```js
-/* when System or System.global is not present */
-if (typeof System === 'object') { delete System.global; }
-delete System;
+/* when `global` is not present */
 var shimmedGlobal = require('system.global').shim();
 	/* or */
 var shimmedGlobal = require('system.global/shim')();
 
 assert.equal(shimmedGlobal, global);
-assert.equal(shimmedGlobal, System.global);
 assert.equal(shimmedGlobal, getGlobal());
 ```
 
 ```js
-/* when System.global is present */
+/* when `global` is present */
 var shimmedGlobal = require('system.global').shim();
 
-assert.equal(shimmedGlobal, System.global);
+assert.equal(shimmedGlobal, global);
 assert.equal(shimmedGlobal, getGlobal());
 ```
 

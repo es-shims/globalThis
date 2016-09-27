@@ -3,24 +3,20 @@
 var define = require('define-properties');
 var getPolyfill = require('./polyfill');
 
-module.exports = function shimSystemAndGlobal() {
+module.exports = function shimGlobal() {
 	var polyfill = getPolyfill();
-	define(
-		polyfill,
-		{ System: {} },
-		{ System: function () { return typeof System !== 'object'; } }
-	);
-	if (System.global !== polyfill) {
-		if (define.supportsDescriptors) {
-			Object.defineProperty(System, 'global', {
+	if (define.supportsDescriptors) {
+		var descriptor = Object.getOwnPropertyDescriptor(polyfill, 'global');
+		if (!descriptor || (descriptor.configurable && (descriptor.enumerable || descriptor.writable || global !== polyfill))) {
+			Object.defineProperty(polyfill, 'global', {
 				configurable: true,
 				enumerable: false,
 				value: polyfill,
 				writable: false
 			});
-		} else {
-			System.global = polyfill;
 		}
+	} else if (typeof global !== 'object' || global !== polyfill) {
+		polyfill.global = polyfill;
 	}
 	return polyfill;
 };
