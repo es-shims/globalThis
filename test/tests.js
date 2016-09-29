@@ -1,3 +1,4 @@
+/* jscs:disable requireUseStrict */
 /* eslint strict: 0, max-statements: 0 */
 
 module.exports = function (theGlobal, t) {
