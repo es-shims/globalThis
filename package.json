@@ -43,16 +43,16 @@
 		"define-properties": "^1.1.2"
 	},
 	"devDependencies": {
-		"browserify": "^13.1.1",
-		"is": "^3.2.0",
-		"tape": "^4.6.3",
+		"@es-shims/api": "^2.1.2",
+		"@ljharb/eslint-config": "^13.0.0",
+		"browserify": "^16.2.2",
 		"covert": "^1.1.0",
+		"eslint": "^5.2.0",
+		"for-each": "^0.3.3",
+		"is": "^3.2.1",
 		"jscs": "^3.0.7",
-		"nsp": "^2.6.2",
-		"eslint": "^3.11.1",
-		"@ljharb/eslint-config": "^9.0.1",
-		"@es-shims/api": "^1.2.0",
-		"for-each": "^0.3.2"
+		"nsp": "^3.2.1",
+		"tape": "^4.9.1"
 	},
 	"testling": {
 		"files": "test/index.js",
