@@ -1,8 +1,8 @@
 {
-	"name": "system.global",
-	"version": "2.0.0",
+	"name": "globalthis",
+	"version": "0.0.0",
 	"author": "Jordan Harband",
-	"description": "ECMAScript spec-compliant polyfill/shim for `global`",
+	"description": "ECMAScript spec-compliant polyfill/shim for `globalThis`",
 	"license": "MIT",
 	"main": "index.js",
 	"scripts": {
@@ -30,8 +30,10 @@
 		"window",
 		"self",
 		"global",
+		"globalThis",
 		"System.global",
 		"global object",
+		"global this value",
 		"ECMAScript",
 		"es-shim API",
 		"polyfill",
