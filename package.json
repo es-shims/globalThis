@@ -38,9 +38,9 @@
 		"shim"
 	],
 	"dependencies": {
-		"function-bind": "^1.1.0",
-		"object-keys": "^1.0.11",
-		"define-properties": "^1.1.2"
+		"define-properties": "^1.1.2",
+		"function-bind": "^1.1.1",
+		"object-keys": "^1.0.12"
 	},
 	"devDependencies": {
 		"@es-shims/api": "^2.1.2",
@@ -76,4 +76,3 @@
 		"node": ">= 0.4"
 	}
 }
-
