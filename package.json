@@ -1,6 +1,6 @@
 {
 	"name": "globalthis",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"author": "Jordan Harband",
 	"description": "ECMAScript spec-compliant polyfill/shim for `globalThis`",
 	"license": "MIT",
