@@ -8,7 +8,7 @@
 	"scripts": {
 		"pretest": "npm run --silent lint && es-shim-api --bound --property",
 		"test": "npm run --silent tests-only",
-		"posttest": "npm run --silent security",
+		"posttest": "npx aud",
 		"tests-only": "npm run --silent test:implementation && npm run --silent test:shim",
 		"test:native": "node test/native.js",
 		"test:shim": "node test/shimmed.js",
@@ -17,8 +17,7 @@
 		"coverage:quiet": "covert test/*.js --quiet",
 		"lint": "eslint .",
 		"build": "mkdir -p dist && browserify browserShim.js > dist/browser.js",
-		"prepublish": "npm run --silent build",
-		"security": "nsp check"
+		"prepublish": "npm run --silent build"
 	},
 	"repository": {
 		"type": "git",
@@ -50,7 +49,6 @@
 		"eslint": "^5.3.0",
 		"for-each": "^0.3.3",
 		"is": "^3.2.1",
-		"nsp": "^3.2.1",
 		"tape": "^4.9.1"
 	},
 	"testling": {
