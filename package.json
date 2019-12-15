@@ -20,7 +20,9 @@
 		"coverage:quiet": "covert test/*.js --quiet",
 		"lint": "eslint .",
 		"build": "mkdir -p dist && browserify browserShim.js > dist/browser.js",
-		"prepublish": "npm run --silent build"
+		"prepublish": "npm run --silent build",
+		"version": "auto-changelog && git add CHANGELOG.md",
+		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
 	},
 	"repository": {
 		"type": "git",
@@ -45,6 +47,7 @@
 	"devDependencies": {
 		"@es-shims/api": "^2.1.2",
 		"@ljharb/eslint-config": "^15.0.2",
+		"auto-changelog": "^1.16.2",
 		"browserify": "^16.5.0",
 		"covert": "^1.1.1",
 		"eslint": "^6.7.2",
@@ -72,5 +75,12 @@
 	},
 	"engines": {
 		"node": ">= 0.4"
+	},
+	"auto-changelog": {
+		"output": "CHANGELOG.md",
+		"template": "keepachangelog",
+		"unreleased": false,
+		"commitLimit": false,
+		"backfillLimit": false
 	}
 }
