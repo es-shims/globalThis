@@ -1,4 +1,3 @@
-/* globals self, window, global */
 /* eslint no-negated-condition: 0, no-new-func: 0 */
 
 'use strict';
