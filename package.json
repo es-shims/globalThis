@@ -1,7 +1,10 @@
 {
 	"name": "globalthis",
 	"version": "1.0.0",
-	"author": "Jordan Harband",
+	"author": "Jordan Harband <ljharb@gmail.com>",
+	"funding": {
+		"url": "https://github.com/sponsors/ljharb"
+	},
 	"description": "ECMAScript spec-compliant polyfill/shim for `globalThis`",
 	"license": "MIT",
 	"main": "index.js",
