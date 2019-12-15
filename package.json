@@ -8,6 +8,9 @@
 	"description": "ECMAScript spec-compliant polyfill/shim for `globalThis`",
 	"license": "MIT",
 	"main": "index.js",
+	"browser": {
+		"./implementation": "./implementation.browser.js"
+	},
 	"scripts": {
 		"pretest": "npm run --silent lint && es-shim-api --bound --property",
 		"test": "npm run --silent tests-only",
