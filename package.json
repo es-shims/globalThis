@@ -14,7 +14,7 @@
 	"scripts": {
 		"pretest": "npm run --silent lint && es-shim-api --bound --property",
 		"test": "npm run --silent tests-only",
-		"posttest": "npx aud",
+		"posttest": "npx aud --production",
 		"tests-only": "npm run --silent test:implementation && npm run --silent test:shim",
 		"test:native": "node test/native.js",
 		"test:shim": "node test/shimmed.js",
