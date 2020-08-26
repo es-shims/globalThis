@@ -49,15 +49,15 @@
 	},
 	"devDependencies": {
 		"@es-shims/api": "^2.1.2",
-		"@ljharb/eslint-config": "^16.0.0",
-		"aud": "^1.1.0",
-		"auto-changelog": "^2.0.0",
-		"browserify": "^16.5.0",
+		"@ljharb/eslint-config": "^17.2.0",
+		"aud": "^1.1.2",
+		"auto-changelog": "^2.2.0",
+		"browserify": "^16.5.2",
 		"covert": "^1.1.1",
-		"eslint": "^6.8.0",
+		"eslint": "^7.7.0",
 		"for-each": "^0.3.3",
 		"is": "^3.3.0",
-		"tape": "^5.0.0-next.5"
+		"tape": "^5.0.1"
 	},
 	"testling": {
 		"files": "test/index.js",
@@ -85,6 +85,7 @@
 		"template": "keepachangelog",
 		"unreleased": false,
 		"commitLimit": false,
-		"backfillLimit": false
+		"backfillLimit": false,
+		"hideCredit": true
 	}
 }
