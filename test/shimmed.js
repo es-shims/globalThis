@@ -1,7 +1,6 @@
 'use strict';
 
-var systemGlobal = require('../');
-systemGlobal.shim();
+require('../auto');
 
 var test = require('tape');
 var defineProperties = require('define-properties');
