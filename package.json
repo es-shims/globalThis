@@ -15,9 +15,7 @@
 		"pretest": "npm run lint",
 		"test": "npm run --silent tests-only",
 		"posttest": "npx aud --production",
-		"tests-only": "tape 'test/**/*.js'",
-		"coverage": "covert test/*.js",
-		"coverage:quiet": "covert test/*.js --quiet",
+		"tests-only": "nyc tape 'test/**/*.js'",
 		"lint": "eslint .",
 		"postlint": "es-shim-api --bound --property",
 		"build": "mkdir -p dist && browserify browserShim.js > dist/browser.js",
@@ -51,10 +49,10 @@
 		"aud": "^1.1.2",
 		"auto-changelog": "^2.2.0",
 		"browserify": "^16.5.2",
-		"covert": "^1.1.1",
 		"eslint": "^7.7.0",
 		"for-each": "^0.3.3",
 		"is": "^3.3.0",
+		"nyc": "^10.3.2",
 		"tape": "^5.0.1"
 	},
 	"testling": {
