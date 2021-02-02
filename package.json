@@ -9,7 +9,7 @@
 	"license": "MIT",
 	"main": "index.js",
 	"browser": {
-		"./implementation": "./implementation.browser.js"
+		"./implementation.js": "./implementation.browser.js"
 	},
 	"scripts": {
 		"prepublish": "safe-publish-latest",
