@@ -1,6 +1,5 @@
 # globalThis <sup>[![Version Badge][npm-version-svg]][npm-url]</sup>
 
-[![Build Status][travis-svg]][travis-url]
 [![dependency status][deps-svg]][deps-url]
 [![dev dependency status][dev-deps-svg]][dev-deps-url]
 [![License][license-image]][license-url]
@@ -53,17 +52,13 @@ assert.equal(shimmedGlobal, getGlobal());
 Simply clone the repo, `npm install`, and run `npm test`
 
 [npm-url]: https://npmjs.org/package/globalthis
-[npm-version-svg]: http://versionbadg.es/ljharb/globalThis.svg
-[travis-svg]: https://travis-ci.org/ljharb/globalThis.svg
-[travis-url]: https://travis-ci.org/ljharb/globalThis
+[npm-version-svg]: https://versionbadg.es/ljharb/globalThis.svg
 [deps-svg]: https://david-dm.org/ljharb/globalThis.svg?theme=shields.io
 [deps-url]: https://david-dm.org/ljharb/globalThis
 [dev-deps-svg]: https://david-dm.org/ljharb/globalThis/dev-status.svg?theme=shields.io
 [dev-deps-url]: https://david-dm.org/ljharb/globalThis#info=devDependencies
-[testling-png]: https://ci.testling.com/ljharb/globalThis.png
-[testling-url]: https://ci.testling.com/ljharb/globalThis
 [npm-badge-png]: https://nodei.co/npm/globalthis.png?downloads=true&stars=true
-[license-image]: http://img.shields.io/npm/l/globalthis.svg
+[license-image]: https://img.shields.io/npm/l/globalthis.svg
 [license-url]: LICENSE
-[downloads-image]: http://img.shields.io/npm/dm/globalthis.svg
-[downloads-url]: http://npm-stat.com/charts.html?package=globalthis
+[downloads-image]: https://img.shields.io/npm/dm/globalthis.svg
+[downloads-url]: https://npm-stat.com/charts.html?package=globalthis
