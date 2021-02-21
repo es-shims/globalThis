@@ -12,7 +12,7 @@
 		"./implementation": "./implementation.browser.js"
 	},
 	"scripts": {
-		"prepublish": "safe-publish-latest",
+		"prepublish": "safe-publish-latest && npm run --silent build",
 		"pretest": "npm run lint",
 		"test": "npm run --silent tests-only",
 		"posttest": "npx aud --production",
@@ -20,7 +20,6 @@
 		"lint": "eslint .",
 		"postlint": "es-shim-api --bound --property",
 		"build": "mkdir -p dist && browserify browserShim.js > dist/browser.js",
-		"prepublish": "npm run --silent build",
 		"version": "auto-changelog && git add CHANGELOG.md",
 		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
 	},
