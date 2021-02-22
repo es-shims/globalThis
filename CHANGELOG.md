@@ -5,6 +5,30 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.2](https://github.com/es-shims/globalThis/compare/v1.0.1...v1.0.2) - 2021-02-22
+
+### Commits
+
+- [Tests] migrate tests to Github Actions [`a3f50f7`](https://github.com/es-shims/globalThis/commit/a3f50f77a392c0ffdaca18fb5881743b874d0a6f)
+- [meta] do not publish github action workflow files [`eb5c787`](https://github.com/es-shims/globalThis/commit/eb5c7879317cd7f1fde52228660be8e779c9d4e3)
+- [Tests] add `implementation` est; run `es-shim-api` in postlint; use `tape` runner [`c9dd792`](https://github.com/es-shims/globalThis/commit/c9dd792d492ec9744a5e5d5033e919b94d441bac)
+- [Tests] fix native tests [`6b76dff`](https://github.com/es-shims/globalThis/commit/6b76dff3af3fe9bcd7b24d48c6ba55116169e840)
+- [Tests] run `nyc` on all tests [`0407f79`](https://github.com/es-shims/globalThis/commit/0407f79f64bf9fc30111f3bf4dff7e4205331fb6)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `auto-changelog`, `tape`, `browserify` [`b8cc020`](https://github.com/es-shims/globalThis/commit/b8cc020e5ecc2d5a5a5b4160aabc60cc42d50c03)
+- [actions] add "Allow Edits" workflow [`e2854df`](https://github.com/es-shims/globalThis/commit/e2854df653667b16ff34a7a0a7b677231dfe2b02)
+- [readme] remove travis badge [`262eb76`](https://github.com/es-shims/globalThis/commit/262eb76e4e0d3f2df354cc6aff1b18f50c7b147f)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `auto-changelog`; add `safe-publish-latest` [`3c76883`](https://github.com/es-shims/globalThis/commit/3c7688325f6aa050afe3ed978e423e70974e4d3b)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `tape` [`7276123`](https://github.com/es-shims/globalThis/commit/727612396262fc22275f44159ec5b39115dc359f)
+- [actions] update workflows [`bcb0f42`](https://github.com/es-shims/globalThis/commit/bcb0f42c319cf19746e03a6667cf25d3e835f46e)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `tape` [`5485851`](https://github.com/es-shims/globalThis/commit/548585148e874d6eb0b0463526a88e8b64e7c5eb)
+- [Dev Deps] update `auto-changelog`, `tape` [`6a01da3`](https://github.com/es-shims/globalThis/commit/6a01da3f321983d1970d793711d31cf8508ef94d)
+- [Dev Deps] update `@ljharb/eslint-config`, `tape` [`7a07f4e`](https://github.com/es-shims/globalThis/commit/7a07f4ebc5580933b40bbe67f357632e0f7d5586)
+- [meta] only run the build script in publish [`797e492`](https://github.com/es-shims/globalThis/commit/797e492519ed0bf6270537290e69ca0456790575)
+- [meta] combine duplicate `prepublish` scripts [`92bbef0`](https://github.com/es-shims/globalThis/commit/92bbef0f91f6e91163186f68b5f5f1ffd26c479d)
+- [Dev Deps] update `auto-changelog`; add `aud` [`be6dbec`](https://github.com/es-shims/globalThis/commit/be6dbecefddb40493c5568a2cbe83f74e2e0385f)
+- [actions] switch Automatic Rebase workflow to `pull_request_target` event [`bfd54f8`](https://github.com/es-shims/globalThis/commit/bfd54f8388758e7dec618dc34956e7075a7c15f0)
+- [Tests] only audit prod deps [`0f64b47`](https://github.com/es-shims/globalThis/commit/0f64b47acfa812affbacbe487fcb0f6c02eccc25)
+
 ## [v1.0.1](https://github.com/es-shims/globalThis/compare/v1.0.0...v1.0.1) - 2019-12-15
 
 ### Fixed
