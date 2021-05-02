@@ -12,7 +12,8 @@
 		"./implementation": "./implementation.browser.js"
 	},
 	"scripts": {
-		"prepublish": "safe-publish-latest && (not-in-publish || npm run --silent build)",
+		"prepublishOnly": "safe-publish-latest && npm run build",
+		"prepublish": "not-in-publish || npm run prepublishOnly",
 		"pretest": "npm run lint",
 		"test": "npm run --silent tests-only",
 		"posttest": "npx aud --production",
