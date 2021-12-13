@@ -16,9 +16,9 @@
 		"prepublish": "not-in-publish || npm run prepublishOnly",
 		"pretest": "npm run lint",
 		"test": "npm run --silent tests-only",
-		"posttest": "npx aud --production",
+		"posttest": "aud --production",
 		"tests-only": "nyc tape 'test/**/*.js'",
-		"lint": "eslint .",
+		"lint": "eslint --ext=js,mjs .",
 		"postlint": "es-shim-api --bound --property",
 		"build": "mkdir -p dist && browserify browserShim.js > dist/browser.js",
 		"version": "auto-changelog && git add CHANGELOG.md",
@@ -46,17 +46,17 @@
 	},
 	"devDependencies": {
 		"@es-shims/api": "^2.2.3",
-		"@ljharb/eslint-config": "^18.0.0",
+		"@ljharb/eslint-config": "^20.0.0",
 		"aud": "^1.1.5",
 		"auto-changelog": "^2.3.0",
 		"browserify": "^16.5.2",
-		"eslint": "^7.32.0",
+		"eslint": "^8.4.1",
 		"for-each": "^0.3.3",
 		"in-publish": "^2.0.1",
 		"is": "^3.3.0",
 		"nyc": "^10.3.2",
-		"safe-publish-latest": "^1.1.4",
-		"tape": "^5.3.1"
+		"safe-publish-latest": "^2.0.0",
+		"tape": "^5.3.2"
 	},
 	"testling": {
 		"files": "test/index.js",
