@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.3](https://github.com/es-shims/globalThis/compare/v1.0.2...v1.0.3) - 2022-05-07
+
+### Commits
+
+- [actions] reuse common workflows [`65891e4`](https://github.com/es-shims/globalThis/commit/65891e4d285ae04e216ff01160cff861e0e41a4f)
+- [actions] use `node/install` instead of `node/run`; use `codecov` action [`82f8481`](https://github.com/es-shims/globalThis/commit/82f84815027f666f625e1ccb41f723800a05d016)
+- [meta] use `npmignore` to autogenerate an npmignore file [`53afc39`](https://github.com/es-shims/globalThis/commit/53afc39bfd3eb262c5e6e9dfd25e4f81f3578c1c)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `auto-changelog`, `tape` [`03169d4`](https://github.com/es-shims/globalThis/commit/03169d4254c9ef177d6537becca5b0b56df50d91)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `safe-publish-latest`, `tape` [`4986e3e`](https://github.com/es-shims/globalThis/commit/4986e3e20c5f664601871a0fac68c1efd0a68472)
+- [actions] update codecov uploader [`15c4b06`](https://github.com/es-shims/globalThis/commit/15c4b062b1a9434dbec93604ed31b6893d11d458)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `auto-changelog`, `tape` [`8b04a74`](https://github.com/es-shims/globalThis/commit/8b04a749d3cb2f825920beb700899f0c13ad2fb8)
+- [Fix] `globalThis` should be writable [`8759985`](https://github.com/es-shims/globalThis/commit/87599852d5f91e2e1f06e424cdefcd443ec98476)
+- [readme] add github actions/codecov badges [`0263f0d`](https://github.com/es-shims/globalThis/commit/0263f0debfa982b928fcd301b11fe3e3193bf33d)
+- [Dev Deps] update `aud`, `eslint`, `tape` [`e88d296`](https://github.com/es-shims/globalThis/commit/e88d296bb026633bdd1be2e1542903a5d0107cd8)
+- [meta] use `prepublishOnly` script for npm 7+ [`c81fde6`](https://github.com/es-shims/globalThis/commit/c81fde6a9e44345e56dada588e16db736809ddd9)
+- [Tests] nycignore `dist` [`bde0c0d`](https://github.com/es-shims/globalThis/commit/bde0c0df46f684316ab414da1487a0cd2efe3eeb)
+- [meta] gitignore coverage output [`79f73f8`](https://github.com/es-shims/globalThis/commit/79f73f8b0c1180567fba473f92c07d71efd4dd0b)
+
 ## [v1.0.2](https://github.com/es-shims/globalThis/compare/v1.0.1...v1.0.2) - 2021-02-22
 
 ### Commits
