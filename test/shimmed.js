@@ -19,7 +19,7 @@ test('shimmed', function (t) {
 
 	t.test('writability', { skip: !defineProperties.supportsDescriptors }, function (wt) {
 		var desc = Object.getOwnPropertyDescriptor(globalThis, 'globalThis');
-		wt.equal(desc.writable, false, 'globalThis.globalThis is not writable');
+		wt.equal(desc.writable, true, 'globalThis.globalThis is writable');
 		wt.end();
 	});
 
