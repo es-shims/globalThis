@@ -43,7 +43,7 @@
 		"shim"
 	],
 	"dependencies": {
-		"define-properties": "^1.1.3"
+		"define-properties": "^1.1.4"
 	},
 	"devDependencies": {
 		"@es-shims/api": "^2.2.3",
