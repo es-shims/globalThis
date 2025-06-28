@@ -48,7 +48,7 @@
 	},
 	"devDependencies": {
 		"@es-shims/api": "^2.5.1",
-		"@ljharb/eslint-config": "^21.1.1",
+		"@ljharb/eslint-config": "^21.2.0",
 		"auto-changelog": "^2.5.0",
 		"browserify": "^16.5.2",
 		"encoding": "^0.1.13",
